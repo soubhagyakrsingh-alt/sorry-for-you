@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>From My Heart ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<audio src="assets/bgm.mp3" autoplay loop></audio>
+
+<div class="container">
+  <h1>My Apology 💌</h1>
+  <p id="typing"></p>
+</div>
+
+<script>
+const text = `
+WRITE YOUR LONG APOLOGY HERE.
+Write honestly. Write emotionally.
+She will read it slowly as it types.
+`;
+
+let i = 0;
+function typeText() {
+  if (i < text.length) {
+    document.getElementById("typing").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typeText, 35);
+  }
+}
+typeText();
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>
