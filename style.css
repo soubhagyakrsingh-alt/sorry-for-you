@@ -1,1 +1,60 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #ffdde1, #ee9ca7);
+  text-align: center;
+  overflow-x: hidden;
+}
 
+.container {
+  padding: 40px;
+}
+
+h1 {
+  color: #b30059;
+}
+
+.main-photo {
+  width: 220px;
+  border-radius: 15px;
+  margin: 20px 0;
+}
+
+.buttons button {
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 25px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#noBtn {
+  position: relative;
+}
+
+#angryGif {
+  display: none;
+  width: 150px;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* HEARTS */
+.heart {
+  position: fixed;
+  bottom: -20px;
+  font-size: 20px;
+  animation: float 5s linear forwards;
+}
+
+@keyframes float {
+  to {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
